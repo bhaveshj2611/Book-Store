@@ -9,6 +9,7 @@ class DescriptionPage extends StatelessWidget {
       required this.bookAuthor,
       required this.bookImage});
 
+  // final Color? bgcolor; implying dynamic values will reduce app performace when there is lot of data or pages in app..
   final bgcolor;
   final String bookName;
   final String bookAuthor;
@@ -137,6 +138,7 @@ class DescriptionPage extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
+            //below container can be implemeted as dragable bottom sheet could give better feel to app.
             Container(
                 width: double.infinity,
                 height: 300,
@@ -154,6 +156,7 @@ class DescriptionPage extends StatelessWidget {
                         style: TextStyle(fontSize: 18),
                       ),
                       const SizedBox(
+                        // if comma is removed this 3 line of code could be made in 1 code will look much more refined as done is homepage
                         height: 10,
                       ),
                       const SizedBox(
